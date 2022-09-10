@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Navbar from "../navbar";
 import { Box, Container } from "@chakra-ui/react";
 
 const Main = ({ children, router }) => {
@@ -11,6 +12,8 @@ const Main = ({ children, router }) => {
                 />
                 <title>Severus Vape - Homepage</title>
             </Head>
+
+            <Navbar path={router.asPath}></Navbar>
 
             <Container maxW="container.md" pt={14}>
                 {children}
