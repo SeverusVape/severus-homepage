@@ -10,18 +10,19 @@ const LogoBox = styled.span`
     align-items: center;
     height: 30px;
     line-height: 20px;
-    padding: 10px;
+    padding: 4x 10px 10px 10px;
+
+    img {
+        transition: 0.2s ease;
+    }
 
     &:hover img {
-        transform: rotate(240deg);
+        transform: rotate(20deg);
     }
 `;
 
 const Logo = () => {
-    const footPrintImg = `/images/footprint${useColorModeValue(
-        "",
-        "-dark"
-    )}.png`;
+    const footPrintImg = `/images/ingress${useColorModeValue("", "-dark")}.png`;
 
     return (
         <Link href="/">
@@ -29,8 +30,8 @@ const Logo = () => {
                 <LogoBox>
                     <Image
                         src={footPrintImg}
-                        width={20}
-                        height={20}
+                        width={29}
+                        height={26}
                         alt="Logo"
                     />
                     <Text
