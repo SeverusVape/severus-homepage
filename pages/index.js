@@ -1,4 +1,4 @@
-import { Container, Box, Heading } from "@chakra-ui/react";
+import { Container, Box, Heading, Image } from "@chakra-ui/react";
 
 const Page = () => {
     return (
@@ -13,6 +13,23 @@ const Page = () => {
                         Severus Vape
                     </Heading>
                     <p>Digital enthusiast ( Developer / Designer )</p>
+                </Box>
+                <Box
+                    flexShrink={0}
+                    mt={{ base: 4, md: 0 }}
+                    ml={{ md: 6 }}
+                    align="center"
+                >
+                    <Image
+                        borderColor="whiteAlpha.800"
+                        borderWidth={2}
+                        borderStyle="solid"
+                        maxWidth="100px"
+                        display="inline-block"
+                        borderRadius="full"
+                        src="/images/severus.jpg"
+                        alt="Profile Img"
+                    />
                 </Box>
             </Box>
         </Container>
