@@ -22,8 +22,9 @@ const Page = () => {
                 p={3}
                 mb={6}
                 align="center"
+                textTransform="uppercase"
             >
-                Hello I&apos;m a full-stack developer based in USA!
+                Hello, I&apos;m a full ^ stack developer based in USA!
             </Box>
 
             <Box display={{ md: "flex" }}>
