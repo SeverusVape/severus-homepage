@@ -1,6 +1,8 @@
 import Head from "next/head";
 import Navbar from "../navbar";
+import NoSsr from "../no-ssr";
 import { Box, Container } from "@chakra-ui/react";
+import VoxelSpace from "../voxel-space";
 
 const Main = ({ children, router }) => {
     return (
@@ -16,6 +18,9 @@ const Main = ({ children, router }) => {
             <Navbar path={router.asPath}></Navbar>
 
             <Container maxW="container.md" pt={14}>
+                <NoSsr>
+                    <VoxelSpace />
+                </NoSsr>
                 {children}
             </Container>
         </Box>
