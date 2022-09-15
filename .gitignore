@@ -1,5 +1,2 @@
 node_modules
-.prettierignore
-.eslint.json
-prettier.config.js
 .next

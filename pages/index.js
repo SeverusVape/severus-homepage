@@ -3,17 +3,23 @@ import {
     Container,
     Box,
     Heading,
-    Image,
     Link,
+    Image,
+    List,
+    ListItem,
+    SimpleGrid,
     useColorModeValue,
     Button,
+    Icon,
 } from "@chakra-ui/react";
 import Section from "../components/section";
 import Paragraph from "../components/paragraph";
 import { ChevronRightIcon } from "@chakra-ui/icons";
 import Layout from "../components/layouts/article";
 import { BioSection, BioYear } from "../components/bio";
-
+import { GridItem } from "../components/grid-items";
+import { IoLogoLinkedin, IoLogoDiscord, IoLogoGithub } from "react-icons/io5";
+import thumbLinkedIn from "../public/images/links/linkedin.png";
 const Page = () => {
     return (
         <Layout>
@@ -21,10 +27,12 @@ const Page = () => {
                 <Box
                     borderRadius="lg"
                     bg={useColorModeValue("whiteAlpha.500", "whiteAlpha.200")}
+                    fontWeight={500}
                     p={3}
                     mb={6}
-                    align="center"
+                    textAlign="center"
                     textTransform="uppercase"
+                    css={{ backdropFilter: "blur(20px)" }}
                 >
                     Hello, I&apos;m a full ^ stack developer based in USA!
                 </Box>
@@ -57,7 +65,7 @@ const Page = () => {
 
                 <Section delay={0.1}>
                     <Heading as="h3" variant="section-title">
-                        Sctn#1(WORK?)
+                        About
                     </Heading>
                     <Paragraph>
                         The standard chunk of Lorem Ipsum used since the 1500s
@@ -93,29 +101,95 @@ const Page = () => {
                     </BioSection>
                     <BioSection>
                         <BioYear>2008</BioYear>
-                        Complited Master&apos;s in University of ...
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Senectus et netus et malesuada fames ac.
                     </BioSection>
                     <BioSection>
-                        <BioYear>2200</BioYear>
-                        국가는 사회보장·사회복지의 증진에 노력할 의무를 진다.
-                        헌법재판소 재판관은 탄핵 또는 금고 이상의 형의 선고에
-                        의하지 아니하고는 파면되지 아니한다. 군사법원의
-                        조직·권한 및 재판관의 자격은 법률로 정한다, 국민경제의
-                        발전을 위한 중요정책의 수립에 관하여 대통령의 자문에
-                        응하기 위하여 국민경제자문회의를 둘 수 있다.
+                        <BioYear>2014</BioYear>
+                        Ab quia ratione ad possimus eius eum atque totam. A
+                        eaque excepturi id voluptatum quidem hic enim esse 33
+                        galisum culpa ea quidem perspiciatis et animi explicabo
+                        non repellat laborum.
                     </BioSection>
                     <BioSection>
-                        <BioYear>2300</BioYear>
-                        국가는 사회보장·사회복지의 증진에 노력할 의무를 진다.
-                        헌법재판소 재판관은 탄핵 또는 금고 이상의 형의 선고에
-                        의하지 아니하고는 파면되지 아니한다.
+                        <BioYear>2017</BioYear>
+                        In totam voluptatibus hic nostrum corporis et doloremque
+                        neque. Qui sint dolores et libero molestias ex rerum
+                        omnis in sunt neque non modi quia et dolorem voluptatem!
                     </BioSection>
                     <BioSection>
-                        <BioYear>3090</BioYear>
-                        군사법원의 조직·권한 및 재판관의 자격은 법률로 정한다,
-                        국민경제의 발전을 위한 중요정책의 수립에 관하여 대통령의
-                        자문에 응하기 위하여 국민경제자문회의를 둘 수 있다.
+                        <BioYear>2008</BioYear>
+                        Quo dolorem nesciunt At iste molestiae et pariatur
+                        consectetur id autem aperiam qui dicta ullam a corrupti
+                        facere.
                     </BioSection>
+                </Section>
+
+                <Section delay={0.3}>
+                    <Heading as="h3" variant="section-title">
+                        Interests
+                    </Heading>
+
+                    <BioSection>Some text...</BioSection>
+                </Section>
+
+                <Section delay={0.4}>
+                    <Heading as="h3" variant="section-title">
+                        On the web
+                    </Heading>
+
+                    <List>
+                        <ListItem>
+                            <Link
+                                href="https://github.com/SeverusVape"
+                                target="_blank"
+                            >
+                                <Button
+                                    variant="ghost"
+                                    colorScheme="teal"
+                                    leftIcon={<Icon as={IoLogoGithub} />}
+                                >
+                                    @SeverusVape
+                                </Button>
+                            </Link>
+                        </ListItem>
+
+                        <ListItem>
+                            <Link href="#" target="_blank">
+                                <Button
+                                    variant="ghost"
+                                    colorScheme="teal"
+                                    leftIcon={<Icon as={IoLogoDiscord} />}
+                                >
+                                    SeverusVape#3589
+                                </Button>
+                            </Link>
+                        </ListItem>
+
+                        <ListItem>
+                            <Link
+                                href="https://www.linkedin.com/in/sergei-koshelev-289314153/"
+                                target="_blank"
+                            >
+                                <Button
+                                    variant="ghost"
+                                    colorScheme="teal"
+                                    leftIcon={<Icon as={IoLogoLinkedin} />}
+                                >
+                                    Severus Vape
+                                </Button>
+                            </Link>
+                        </ListItem>
+                    </List>
+
+                    <SimpleGrid columns={[1, 1, 1]} gap={6}>
+                        <GridItem
+                            href="#"
+                            title="My LinkedIn Profile"
+                            thumbnail={thumbLinkedIn}
+                        ></GridItem>
+                    </SimpleGrid>
                 </Section>
             </Container>
         </Layout>

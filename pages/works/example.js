@@ -15,7 +15,7 @@ const Work = () => (
     <Layout title="example">
         <Container>
             <Title>
-                Example <Badge>2021-</Badge>
+                Example project <Badge>2021-2022</Badge>
             </Title>
             <P>
                 It is a long established fact that a reader will be distracted
@@ -37,9 +37,9 @@ const Work = () => (
                     <span>NodeJS, Electron, React Native</span>
                 </ListItem>
                 <ListItem>
-                    <Meta>Blogpost</Meta>
+                    <Meta>Source code</Meta>
                     <Link href="#">
-                        Some information about your blogposts..{" "}
+                        Check source code of this project{" "}
                         <ExternalLinkIcon mx="2px" />
                     </Link>
                 </ListItem>
@@ -47,7 +47,9 @@ const Work = () => (
 
             <WorkImage src="/images/works/example_01.jpg" alt="example" />
             <WorkImage src="/images/works/example_02.jpg" alt="example" />
-            <AspectRatio maxW="640px" ratio={1.7} my={4}>
+
+            {/* VIDEO */}
+            {/* <AspectRatio maxW="640px" ratio={1.7} my={4}>
                 <iframe
                     src="https://www.youtube.com/embed/-SMKVJO_wGo"
                     title="YouTube video player"
@@ -55,7 +57,7 @@ const Work = () => (
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
                 ></iframe>
-            </AspectRatio>
+            </AspectRatio> */}
         </Container>
     </Layout>
 );
