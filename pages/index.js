@@ -20,7 +20,9 @@ const Page = () => {
             <Container>
                 <Box
                     borderRadius="lg"
-                    bg={useColorModeValue("whiteAlpha.500", "whiteAlpha.200")}
+                    bg={useColorModeValue("whiteAlpha.900", "whiteAlpha.800")}
+                    color="#E94560"
+                    fontWeight={700}
                     p={3}
                     mb={6}
                     align="center"

@@ -15,7 +15,7 @@ const Work = () => (
     <Layout title="example">
         <Container>
             <Title>
-                Example <Badge>2021-</Badge>
+                Example <Badge>2021-2022</Badge>
             </Title>
             <P>
                 It is a long established fact that a reader will be distracted
@@ -39,7 +39,7 @@ const Work = () => (
                 <ListItem>
                     <Meta>Blogpost</Meta>
                     <Link href="#">
-                        Some information about your blogposts..{" "}
+                        Link to info about this project{" "}
                         <ExternalLinkIcon mx="2px" />
                     </Link>
                 </ListItem>

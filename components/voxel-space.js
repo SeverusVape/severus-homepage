@@ -74,8 +74,7 @@ const VoxelSpace = () => {
             controls.target = target;
             setControls(controls);
 
-            loadGLTFModel(scene, "/dog.glb", {
-                //"/Wandering_the_moon.glb"
+            loadGLTFModel(scene, "/che.glb", {
                 receiveShadow: false,
                 castShadow: false,
             }).then(() => {

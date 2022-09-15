@@ -39,14 +39,14 @@ const Work = () => (
                 <ListItem>
                     <Meta>Blogpost</Meta>
                     <Link href="#">
-                        Some information about your blogposts..{" "}
+                        Link to info about this project{" "}
                         <ExternalLinkIcon mx="2px" />
                     </Link>
                 </ListItem>
             </List>
 
-            <WorkImage src="/images/works/example_01.jpg" alt="example" />
-            <WorkImage src="/images/works/example_02.jpg" alt="example" />
+            <WorkImage src="/images/works/worktwo_01.jpg" alt="example" />
+            <WorkImage src="/images/works/worktwo_02.jpg" alt="example" />
             <AspectRatio maxW="640px" ratio={1.7} my={4}>
                 <iframe
                     src="https://www.youtube.com/embed/-SMKVJO_wGo"
