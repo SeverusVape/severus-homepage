@@ -1,1 +1,1 @@
-self.__REACT_LOADABLE_MANIFEST={}
+self.__REACT_LOADABLE_MANIFEST={"..\\components\\layouts\\main.js -> ../voxel-space":{"id":"..\\components\\layouts\\main.js -> ../voxel-space","files":["static/chunks/components_voxel-space_js.js"]}}

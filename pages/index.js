@@ -20,13 +20,13 @@ const Page = () => {
             <Container>
                 <Box
                     borderRadius="lg"
-                    bg={useColorModeValue("whiteAlpha.900", "whiteAlpha.800")}
-                    color="#E94560"
-                    fontWeight={700}
+                    bg={useColorModeValue("whiteAlpha.500", "whiteAlpha.200")}
+                    fontWeight={500}
                     p={3}
                     mb={6}
-                    align="center"
+                    textAlign="center"
                     textTransform="uppercase"
+                    css={{ backdropFilter: "blur(20px)" }}
                 >
                     Hello, I&apos;m a full ^ stack developer based in USA!
                 </Box>

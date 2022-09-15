@@ -1,8 +1,13 @@
 import Head from "next/head";
 import Navbar from "../navbar";
-import NoSsr from "../no-ssr";
+import dynamic from "next/dynamic";
 import { Box, Container } from "@chakra-ui/react";
-import VoxelSpace from "../voxel-space";
+import VoxelSpaceLoader from "../voxel-space-loader";
+
+const LazyVoxelSpace = dynamic(() => import("../voxel-space"), {
+    ssr: false,
+    loading: () => <VoxelSpaceLoader />,
+});
 
 const Main = ({ children, router }) => {
     return (
@@ -18,9 +23,7 @@ const Main = ({ children, router }) => {
             <Navbar path={router.asPath}></Navbar>
 
             <Container maxW="container.md" pt={14}>
-                <NoSsr>
-                    <VoxelSpace />
-                </NoSsr>
+                <LazyVoxelSpace />
                 {children}
             </Container>
         </Box>
