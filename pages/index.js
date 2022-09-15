@@ -59,7 +59,7 @@ const Page = () => {
 
                 <Section delay={0.1}>
                     <Heading as="h3" variant="section-title">
-                        Sctn#1(WORK?)
+                        About
                     </Heading>
                     <Paragraph>
                         The standard chunk of Lorem Ipsum used since the 1500s
@@ -95,29 +95,37 @@ const Page = () => {
                     </BioSection>
                     <BioSection>
                         <BioYear>2008</BioYear>
-                        Complited Master&apos;s in University of ...
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Senectus et netus et malesuada fames ac.
                     </BioSection>
                     <BioSection>
-                        <BioYear>2200</BioYear>
-                        국가는 사회보장·사회복지의 증진에 노력할 의무를 진다.
-                        헌법재판소 재판관은 탄핵 또는 금고 이상의 형의 선고에
-                        의하지 아니하고는 파면되지 아니한다. 군사법원의
-                        조직·권한 및 재판관의 자격은 법률로 정한다, 국민경제의
-                        발전을 위한 중요정책의 수립에 관하여 대통령의 자문에
-                        응하기 위하여 국민경제자문회의를 둘 수 있다.
+                        <BioYear>2014</BioYear>
+                        Ab quia ratione ad possimus eius eum atque totam. A
+                        eaque excepturi id voluptatum quidem hic enim esse 33
+                        galisum culpa ea quidem perspiciatis et animi explicabo
+                        non repellat laborum.
                     </BioSection>
                     <BioSection>
-                        <BioYear>2300</BioYear>
-                        국가는 사회보장·사회복지의 증진에 노력할 의무를 진다.
-                        헌법재판소 재판관은 탄핵 또는 금고 이상의 형의 선고에
-                        의하지 아니하고는 파면되지 아니한다.
+                        <BioYear>2017</BioYear>
+                        In totam voluptatibus hic nostrum corporis et doloremque
+                        neque. Qui sint dolores et libero molestias ex rerum
+                        omnis in sunt neque non modi quia et dolorem voluptatem!
                     </BioSection>
                     <BioSection>
-                        <BioYear>3090</BioYear>
-                        군사법원의 조직·권한 및 재판관의 자격은 법률로 정한다,
-                        국민경제의 발전을 위한 중요정책의 수립에 관하여 대통령의
-                        자문에 응하기 위하여 국민경제자문회의를 둘 수 있다.
+                        <BioYear>2008</BioYear>
+                        Quo dolorem nesciunt At iste molestiae et pariatur
+                        consectetur id autem aperiam qui dicta ullam a corrupti
+                        facere.
                     </BioSection>
+                </Section>
+
+                <Section delay={0.3}>
+                    <Heading as="h3" variant="section-title">
+                        Interests
+                    </Heading>
+
+                    <BioSection>Some text...</BioSection>
                 </Section>
             </Container>
         </Layout>

@@ -70,7 +70,7 @@ const VoxelSpace = () => {
             controls.autoRotate = true;
             controls.target = target;
 
-            loadGLTFModel(scene, "/che.glb", {
+            loadGLTFModel(scene, "/car2.glb", {
                 receiveShadow: false,
                 castShadow: false,
             }).then(() => {
