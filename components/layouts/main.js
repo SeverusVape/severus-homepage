@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Navbar from "../navbar";
+import Footer from "../footer";
 import dynamic from "next/dynamic";
 import { Box, Container } from "@chakra-ui/react";
 import VoxelSpaceLoader from "../voxel-space-loader";
@@ -17,6 +18,7 @@ const Main = ({ children, router }) => {
                     name="viewport"
                     content="width=device-width, initial-scale=1"
                 />
+                <meta name="author" content="Severus Vape" />
                 <title>Severus Vape - Homepage</title>
             </Head>
 
@@ -25,6 +27,8 @@ const Main = ({ children, router }) => {
             <Container maxW="container.md" pt={14}>
                 <LazyVoxelSpace />
                 {children}
+
+                <Footer />
             </Container>
         </Box>
     );

@@ -3,17 +3,23 @@ import {
     Container,
     Box,
     Heading,
-    Image,
     Link,
+    Image,
+    List,
+    ListItem,
+    SimpleGrid,
     useColorModeValue,
     Button,
+    Icon,
 } from "@chakra-ui/react";
 import Section from "../components/section";
 import Paragraph from "../components/paragraph";
 import { ChevronRightIcon } from "@chakra-ui/icons";
 import Layout from "../components/layouts/article";
 import { BioSection, BioYear } from "../components/bio";
-
+import { GridItem } from "../components/grid-items";
+import { IoLogoLinkedin, IoLogoDiscord, IoLogoGithub } from "react-icons/io5";
+import thumbLinkedIn from "../public/images/links/linkedin.png";
 const Page = () => {
     return (
         <Layout>
@@ -126,6 +132,64 @@ const Page = () => {
                     </Heading>
 
                     <BioSection>Some text...</BioSection>
+                </Section>
+
+                <Section delay={0.4}>
+                    <Heading as="h3" variant="section-title">
+                        On the web
+                    </Heading>
+
+                    <List>
+                        <ListItem>
+                            <Link
+                                href="https://github.com/SeverusVape"
+                                target="_blank"
+                            >
+                                <Button
+                                    variant="ghost"
+                                    colorScheme="teal"
+                                    leftIcon={<Icon as={IoLogoGithub} />}
+                                >
+                                    @SeverusVape
+                                </Button>
+                            </Link>
+                        </ListItem>
+
+                        <ListItem>
+                            <Link href="#" target="_blank">
+                                <Button
+                                    variant="ghost"
+                                    colorScheme="teal"
+                                    leftIcon={<Icon as={IoLogoDiscord} />}
+                                >
+                                    SeverusVape#3589
+                                </Button>
+                            </Link>
+                        </ListItem>
+
+                        <ListItem>
+                            <Link
+                                href="https://www.linkedin.com/in/sergei-koshelev-289314153/"
+                                target="_blank"
+                            >
+                                <Button
+                                    variant="ghost"
+                                    colorScheme="teal"
+                                    leftIcon={<Icon as={IoLogoLinkedin} />}
+                                >
+                                    Severus Vape
+                                </Button>
+                            </Link>
+                        </ListItem>
+                    </List>
+
+                    <SimpleGrid columns={[1, 1, 1]} gap={6}>
+                        <GridItem
+                            href="#"
+                            title="My LinkedIn Profile"
+                            thumbnail={thumbLinkedIn}
+                        ></GridItem>
+                    </SimpleGrid>
                 </Section>
             </Container>
         </Layout>

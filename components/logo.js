@@ -8,12 +8,12 @@ const LogoBox = styled.span`
     font-size: 18px;
     display: inline-flex;
     align-items: center;
-    height: 39px;
+    height: 30px;
     line-height: 20px;
     padding: 10px;
 
     img {
-        transition: 0.2s ease;
+        transition: 200ms ease;
     }
 
     &:hover img {
@@ -30,8 +30,8 @@ const Logo = () => {
                 <LogoBox>
                     <Image
                         src={footPrintImg}
-                        width={29}
-                        height={26}
+                        width={24}
+                        height={22}
                         alt="Logo"
                     />
                     <Text
